@@ -20,7 +20,7 @@
           <td>{{ item.memo }}</td>
           <td>{{ item.qty }}</td>
           <td>
-            <v-btn color="info" flat round @click="btnEdit( item)">Edit</v-btn>
+            <v-btn color="info" flat round @click="btnEdit(item)">Edit</v-btn>
             <v-btn color="red" flat round @click="btnDelete( item._id)">Delete</v-btn>
           </td>
         </tr>
@@ -32,42 +32,7 @@
 <script>
 export default {
   props: ["items"],
-  data() {
-    return {
-      headers: [
-        {
-          text: "Name",
-          align: "left",
-          sortable: true,
-          value: "name"
-        },
-        {
-          text: "Price",
-          align: "left",
-          sortable: true,
-          value: "price"
-        },
-        {
-          text: "Cost",
-          align: "left",
-          sortable: true,
-          value: "cost"
-        },
-        {
-          text: "Memo",
-          align: "left",
-          sortable: true,
-          value: "memo"
-        },
-        {
-          text: "Qty",
-          align: "left",
-          sortable: true,
-          value: "qty"
-        }
-      ]
-    };
-  },
+
 
   methods: {
     btnEdit(val) {

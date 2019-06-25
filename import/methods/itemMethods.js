@@ -6,12 +6,14 @@ import Item from '../collections/items'
       return Item.findOne(id)
     },
     insertItem(doc){
+      console.log(doc)
       return Item.insert(doc)
     },
     findItem(){
       return Item.find().fetch();
     },
     removeItem(id){
+      console.log(id)
       return Item.remove({_id:id})
     },
     updateItem(doc){
