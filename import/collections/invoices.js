@@ -23,7 +23,7 @@ schema.invoices = new SimpleSchema({
     'items.$': {
         type: Object,
     },
-    
+
     'items.$.itemId': {
         type: String,
     },

@@ -41,12 +41,12 @@ export default {
   methods: {
     getForm(val) {
       this.formType = "Update";
-      this.form._id = val.item._id
-      this.form.name = val.item.name
-      this.form.price =  val.item.price;
-      this.form.cost =  val.item.cost;
-      this.form.memo =  val.item.memo
-      this.form.qty =  val.item.qty
+      this.form._id = val._id
+      this.form.name = val.name
+      this.form.price =  val.price;
+      this.form.cost =  val.cost;
+      this.form.memo =  val.memo
+      this.form.qty =  val.qty
     },
 
     getItemData() {
