@@ -65,6 +65,7 @@ export default {
           memo: this.form.memo,
           qty: parseFloat(this.form.qty)
         };
+        console.log(doc)
         Meteor.call("insertItem", doc, (error, result) => {
           if (result) {
             this.getItemData();

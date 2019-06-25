@@ -65,6 +65,7 @@ export default {
           address: this.form.address,
           phone: this.form.phone,         
         };
+        console.log(doc)
         Meteor.call("insertCustomer", doc, (error, result) => {
           if (result) {
             this.getItemData();
