@@ -10,7 +10,7 @@
   "dependencies": {
     "@babel/runtime": "^7.4.4",
     "meteor-node-stubs": "^0.4.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "simpl-schema": "^1.5.5",
     "vue": "^2.6.10",
     "vue-router": "^3.0.6",
